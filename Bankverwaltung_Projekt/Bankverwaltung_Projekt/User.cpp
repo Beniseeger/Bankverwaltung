@@ -1,29 +1,24 @@
 #include "stdafx.h"
-#include "Uservariablen.h"
+#include "User.h"
 #include <string>
 
 User::User(std::string username, std::string passwort)
 {
-	setusername(username);
-	setpasswort(passwort);
+	m_username = username;
+	m_passwort = passwort;
 }
 
 User::~User()
 {}
 
-void User::setuserID(int id) 
+void User::setnumberofusers(int number) 
 {
-	m_userID = id;
+	m_numberofusers = number;
 }
 
-void User::setpasswort(std::string pass)
+int User::getnumberofusers() 
 {
-	m_passwort = pass;
-}
-
-void User::setusername(std::string user)
-{
-	m_username = user;
+	return m_numberofusers;
 }
 
 std::string  User::getpasswort()
@@ -36,7 +31,3 @@ std::string User::getusername()
 	return m_username;
 }
 
-int User::getUserID()
-{
-	return m_userID;
-}

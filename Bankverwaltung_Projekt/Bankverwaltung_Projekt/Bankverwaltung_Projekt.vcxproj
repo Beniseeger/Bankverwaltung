@@ -143,11 +143,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Uservariablen.h" />
+    <ClInclude Include="Accountyp.h" />
+    <ClInclude Include="createAccountController.h" />
+    <ClInclude Include="Account.h" />
+    <ClInclude Include="LoginControllerheader.h" />
+    <ClInclude Include="User.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Accountyp.cpp" />
+    <ClCompile Include="createAccountController.cpp" />
+    <ClCompile Include="Account.cpp" />
     <ClCompile Include="LoginController.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="User.cpp" />
